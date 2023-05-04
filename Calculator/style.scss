@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+@mixin centerBoth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+/*
+.process {
+    background: black;
+    border-color: black;
+    width: 0%
+   
+}
+*/
+
+.dataentry {
+    @include centerBoth();
+    width: 95%;
+    height: 90px;
+    text-align: end;
+    font-size: 80px;
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+button {
+    justify-content: space-around;
+    border-radius: 50%; 
+    text-align: center;
+    vertical-align: middle ;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 20%;
+    height: 15%;
+    margin: 0;
+    padding: 6%;
+}
+
+.numberzero {
+    width: 500px;
+    border-radius: 45%;
+}
+
+.first {
+    @include centerBoth();
+    justify-content: space-around;
+    .delete {
+        font-size:20px;
+    }
+    .delete, .fraction, .percentage {
+        background-color: rgb(170, 169, 169)
+    }
+    .action {
+        background-color: rgb(245, 185, 20);
+        color: white
+    }
+}
+.second {
+    @include centerBoth();
+    justify-content: space-around;
+    .number {
+        background-color: rgb(70, 70, 70);
+        color: white
+    }
+    .action {
+        background-color: rgb(245, 185, 20);
+        color: white
+    }
+}
+.third {
+    @include centerBoth();
+    justify-content: space-around;
+    .number {
+        background-color: rgb(70, 70, 70);
+        color: white
+    }
+    .action {
+        background-color: rgb(245, 185, 20);
+        color: white
+    }
+}
+.fourth {
+    @include centerBoth();
+    justify-content: space-around;
+    .number {
+        background-color: rgb(70, 70, 70);
+        color: white
+    }
+    .action {
+        background-color: rgb(245, 185, 20);
+        color: white
+    }
+}
+.fifth {
+    @include centerBoth();
+    justify-content: space-around;
+    .make-equal {
+        background-color: rgb(245, 185, 20);
+        color: white
+    }
+    .numberzero, .decimal {
+        background-color: rgb(70, 70, 70);
+        color: white
+    }
+    
+}
+
+
+@media screen and (max-width: 900px ) {
+
+    button {
+        font-size: 1.5rem;
+    }
+    .numberzero {
+        width: 250px;
+    }
+    .first {
+        .delete {
+            font-size:25px;
+        }
+    }
+    .numberzero {
+        width: 190px;
+    }
+
+}
+
+@media screen and (max-width: 450px ) {
+    .first {
+        .delete {
+            font-size:20px;
+        }
+    }
+
+}
